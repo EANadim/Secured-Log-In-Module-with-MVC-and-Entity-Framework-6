@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Registration 2</h2>
+<form method="post">
+    Security question    :
+    <select name="question" id="question" required>
+        <option value="What is your pets name ?">What is your pets name ?</option>
+        <option value="Who is your favorite cousin ?">Who is your favorite cousin ?</option>
+        <option value="Which is your favorite animal ?">Which is your favorite animal ?</option>
+    </select><br />
+    <span id="questionEr"></span><br />
+    Answer : <input type="text" name="answer" id="answer" required /><br /><span id="answerEr"></span><br />
+    <input type='submit' value='Next' />  |  @Html.ActionLink("Back", "Index", "Registration")
+</form>

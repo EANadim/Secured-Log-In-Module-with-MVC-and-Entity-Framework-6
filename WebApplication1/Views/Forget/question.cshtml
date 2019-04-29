@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Forget Password</h2>
+<p>Step 2 : Enter your answer to the question</p>
+<form method="post">
+    Question : @ViewBag.Question </br>
+    Answer     : <input type="text" name="answer" id="answer" required><br><span id="answerFor"></span><br>
+    <input type="submit" value="Next">
+</form>

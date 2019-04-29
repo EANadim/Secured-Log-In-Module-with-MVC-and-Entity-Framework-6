@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Registration 1</h2>
+<form method="post">
+    Email     : <input type="email" name="email" id="email" value= "@ViewBag.emailReg" required><br><span id="emailEr"></span><br>
+    Name : <input type="text" name="name" id="name" value= "@ViewBag.nameReg" required><br><span id="nameEr"></span><br>
+    Password : <input type="password" name="password" id="password" value= "@ViewBag.passwordReg" required><br><span id="passwordEr"></span><br>
+    Gender :
+    <select name="gender" id="gender" value= "@ViewBag.genderReg" required>
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="other">other</option>
+    </select>
+    <br /><span id="genderEr"></span><br />
+    Address : <input type="text" name="address" id="address" value= "@ViewBag.addressReg" required /><br /><span id="addressEr"></span><br />
+    Type :
+    <select name="type" id="type" value= "@ViewBag.typeReg" required>
+        <option value="user">user</option>
+        <option value="admin">admin</option>
+    </select>
+    <br /><span id="typeEr"></span><br />
+
+    <input type="submit" value="Next">
+</form>
+

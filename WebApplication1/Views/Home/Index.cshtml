@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Log In</h2>
+<div>
+    <form method="post">
+        Email     : <input type="email" name="email" id="email" required><br><span id="emailEr"></span><br>
+        Password : <input type="password" name="password" id="password" required><br><span id="passwordEr"></span><br>
+        <input type="checkbox" name="ChkRememberme" id="ChkRememberme" value="off">REMEMBER ME<br>
+        @ViewBag.Message </br>
+        <input type="submit" value="Log in">
+    </form>
+    @Html.ActionLink("Registration", "Index", "Registration") | @Html.ActionLink("Forget Password", "Index", "Forget")
+</div>

@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Registration</h2></br>
+<p>Registration Successful</p></br>
+
+<p>Email : @ViewBag.emailReg</p>
+<p>Name : @ViewBag.nameReg</p>
+<p>Gender : @ViewBag.genderReg</p>
+<p>Address : @ViewBag.addressReg</p>
+<p>Type : @ViewBag.typeReg</p>
+
+@Html.ActionLink("Home", "Index", "Home")
